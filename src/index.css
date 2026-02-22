@@ -1,0 +1,68 @@
+.app {
+  font-family: system-ui;
+  padding: 20px;
+  background: #f8fafc;
+  min-height: 100vh;
+  transition: 0.3s;
+}
+
+.app.dark {
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.app.dark .card {
+  background: #1e293b;
+}
+
+.form input {
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #22c55e;
+  color: white;
+  cursor: pointer;
+}
+
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.leader-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 12px;
+  background: #e2e8f0;
+}
+
+.app.dark .leader-card {
+  background: #334155;
+}
